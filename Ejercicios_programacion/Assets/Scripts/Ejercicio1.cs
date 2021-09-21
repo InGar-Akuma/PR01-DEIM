@@ -4,19 +4,24 @@ using UnityEngine;
 
 public class Ejercicio1 : MonoBehaviour
 {
-    private int num1 = 42;
+    public int num1 = 42;
     
-    private float decimal1 = 22.2f ;
+    [SerializeField] float decimal1 = 22.2f ;
 
-    private bool boolean1 = true;
+    public bool boolean1 = true;
 
-    private string texto1 = "ash nazg thrakatuluk agh burzum-ishi krimpatul";
+    [SerializeField] string texto1 = "ash nazg thrakatuluk agh burzum-ishi krimpatul";
 
 
     // Start is called before the first frame update
     void Start()
     {
-        print("respuesat: " + num1);
+        //num1 = 23;
+        decimal1 = 33.3f;
+        //boolean1 = false;
+        //texto1 = "Hola mundo";
+
+        print(num1);
         print(texto1);
         print(boolean1 + " " + decimal1);
     }
