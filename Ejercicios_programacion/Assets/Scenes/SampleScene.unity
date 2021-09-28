@@ -331,7 +331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d17509c6235b041808de84e1359403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  valor: 900
+  numero: 9
 --- !u!135 &1425271233
 SphereCollider:
   m_ObjectHideFlags: 0
