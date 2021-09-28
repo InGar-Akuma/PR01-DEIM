@@ -5,7 +5,7 @@ using UnityEngine;
 public class Ejercicio2 : MonoBehaviour
 {
 
-    int valor = 10;
+    [SerializeField] int valor;
 
 
     // Start is called before the first frame update
@@ -13,14 +13,28 @@ public class Ejercicio2 : MonoBehaviour
     {
         while (valor >= 0) 
         {
-            print("El valor while es: " + valor);
+            print(valor);
+
+            if (valor == 100)
+            {
+                print("Queda mucho");
+            }
+
+            if (valor == 5)
+            {
+                print("Queda poco");
+            }
+            
+
+            if (valor == 0) 
+            {
+                print("Has llegadoa cero");
+            }
+
             valor--;
         }
+         
 
-        for (valor = 10; valor >= 0 ; valor--)
-        {
-            print("el valor for es: " + valor);
-        }
     }
 
 }
