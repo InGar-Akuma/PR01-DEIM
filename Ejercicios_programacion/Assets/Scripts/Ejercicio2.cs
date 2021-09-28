@@ -5,20 +5,55 @@ using UnityEngine;
 public class Ejercicio2 : MonoBehaviour
 {
 
-    [SerializeField] string nombre;
+    [SerializeField] float num1;
+    [SerializeField] float num2;
+    [SerializeField] string op;
+
+    bool par = true;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        Saludar();
+        Calcular(num1, num2, op);
 
     }
 
-    void Saludar()
+    void Calcular(float num1, float num2, string op)
     {
-        print("Saludos terricola " + nombre);
+        float resultado = 0f;
+        if (op == "dividir")
+        {
+            resultado = num1 / num2;
+        }
+        else if (op == "multiplicar")
+        {
+            resultado = num1 * num2;
+        }
+        else if (op == "sumar")
+        {
+            resultado = num1 + num2;
+        }
+        else if (op == "restar")
+        {
+            resultado = num1 - num2;
+        }
+        print(resultado);
+
+        resultado = resultado % 2;
+
+        if(resultado== 0)
+        {
+            par = true;
+            print("Es par: bool = " + par);
+            
+        }
+        else
+        {
+            par = false;
+            print("Es impar: bool = " + par);
+            
+        }
 
     }
-
 }
