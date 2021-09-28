@@ -5,23 +5,19 @@ using UnityEngine;
 public class Ejercicio2 : MonoBehaviour
 {
 
-    [SerializeField] int numero;
-    float numAzar;  
+    [SerializeField] string nombre;
 
 
     // Start is called before the first frame update
     void Start()
     {
-       while(numAzar != numero)
-        {
-            numAzar = Random.Range(0, 11);
-            print(numAzar);
-        }
-       
-       if (numAzar == numero)
-        {
-            print("¡Coinciden! " + numAzar);
-        }
+        Saludar();
+
+    }
+
+    void Saludar()
+    {
+        print("Saludos terricola " + nombre);
 
     }
 
